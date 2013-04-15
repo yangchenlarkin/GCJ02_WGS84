@@ -23,7 +23,7 @@
 		D00CB44D1713BE0E00086861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00CB4281713BE0E00086861 /* Foundation.framework */; };
 		D00CB4551713BE0E00086861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00CB4531713BE0E00086861 /* InfoPlist.strings */; };
 		D00CB4581713BE0E00086861 /* GCJ02_WGS84Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CB4571713BE0E00086861 /* GCJ02_WGS84Tests.m */; };
-		D00CB4631713BE4400086861 /* EMLocationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CB4621713BE4400086861 /* EMLocationSystem.m */; };
+		D00CB4631713BE4400086861 /* LALocationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CB4621713BE4400086861 /* LALocationSystem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		D00CB4541713BE0E00086861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D00CB4561713BE0E00086861 /* GCJ02_WGS84Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCJ02_WGS84Tests.h; sourceTree = "<group>"; };
 		D00CB4571713BE0E00086861 /* GCJ02_WGS84Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCJ02_WGS84Tests.m; sourceTree = "<group>"; };
-		D00CB4611713BE4400086861 /* EMLocationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocationSystem.h; sourceTree = "<group>"; };
-		D00CB4621713BE4400086861 /* EMLocationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLocationSystem.m; sourceTree = "<group>"; };
+		D00CB4611713BE4400086861 /* LALocationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALocationSystem.h; sourceTree = "<group>"; };
+		D00CB4621713BE4400086861 /* LALocationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALocationSystem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 		D00CB42C1713BE0E00086861 /* GCJ02_WGS84 */ = {
 			isa = PBXGroup;
 			children = (
-				D00CB4611713BE4400086861 /* EMLocationSystem.h */,
-				D00CB4621713BE4400086861 /* EMLocationSystem.m */,
+				D00CB4611713BE4400086861 /* LALocationSystem.h */,
+				D00CB4621713BE4400086861 /* LALocationSystem.m */,
 				D00CB4351713BE0E00086861 /* AppDelegate.h */,
 				D00CB4361713BE0E00086861 /* AppDelegate.m */,
 				D00CB43E1713BE0E00086861 /* ViewController.h */,
@@ -278,7 +278,7 @@
 				D00CB4331713BE0E00086861 /* main.m in Sources */,
 				D00CB4371713BE0E00086861 /* AppDelegate.m in Sources */,
 				D00CB4401713BE0E00086861 /* ViewController.m in Sources */,
-				D00CB4631713BE4400086861 /* EMLocationSystem.m in Sources */,
+				D00CB4631713BE4400086861 /* LALocationSystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +459,7 @@
 				D00CB45D1713BE0E00086861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00CB45E1713BE0E00086861 /* Build configuration list for PBXNativeTarget "GCJ02_WGS84Tests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +468,7 @@
 				D00CB4601713BE0E00086861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

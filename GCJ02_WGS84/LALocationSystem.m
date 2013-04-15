@@ -7,7 +7,7 @@
 //
 
 
-#import "EMLocationSystem.h"
+#import "LALocationSystem.h"
 
 // a = 6378245.0, 1/f = 298.3
 // b = a * (1 - f)
@@ -20,8 +20,8 @@ double transformLat(double x, double y);
 double transformLon(double x, double y);
 
 // World Geodetic System ==> Mars Geodetic System
-EMCoordinatePoint transform(double wgLat, double wgLon) {
-  EMCoordinatePoint resPoint;
+LACoordinatePoint transform(double wgLat, double wgLon) {
+  LACoordinatePoint resPoint;
   double mgLat;
   double mgLon;
   if (outOfChina(wgLat, wgLon)) {
@@ -69,13 +69,13 @@ double transformLon(double x, double y) {
   return ret;
 }
 
-@implementation EMLocationSystem
+@implementation LALocationSystem
 
-+ (EMCoordinatePoint)GCJ02PointWithWGS84Point:(EMCoordinatePoint)point {
++ (LACoordinatePoint)GCJ02PointWithWGS84Point:(LACoordinatePoint)point {
   return transform(point.latitude, point.longitude);
 }
 
-+ (EMCoordinatePoint)GCJ02PointWithWGS84latigute:(double)latitude logitude:(double)logitude {
++ (LACoordinatePoint)GCJ02PointWithWGS84latigute:(double)latitude logitude:(double)logitude {
   return transform(latitude, logitude);
 }
 

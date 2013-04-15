@@ -13,13 +13,13 @@
 typedef struct {
   double latitude;
   double longitude;
-} EMCoordinatePoint;
+} LACoordinatePoint;
 
-EMCoordinatePoint transform(double wgLat, double wgLon);
+LACoordinatePoint transform(double wgLat, double wgLon);
 
-@interface EMLocationSystem : NSObject
+@interface LALocationSystem : NSObject
 
-+ (EMCoordinatePoint)GCJ02PointWithWGS84Point:(EMCoordinatePoint)point;
-+ (EMCoordinatePoint)GCJ02PointWithWGS84latigute:(double)latitude logitude:(double)logitude;
++ (LACoordinatePoint)GCJ02PointWithWGS84Point:(LACoordinatePoint)point;
++ (LACoordinatePoint)GCJ02PointWithWGS84latigute:(double)latitude logitude:(double)logitude;
 
 @end
